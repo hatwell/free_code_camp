@@ -1,0 +1,64 @@
+<html><head>survey form</head>
+<body>
+    <h1 id=title>Survey</h1>
+    <p id='description'>a survey</p>
+    <form action="" id='survey-form'>
+        <label id="name-label">
+            name
+        <input type="text" id="name" placeholder="your name" required>
+
+        </label>
+        
+        <label id="email-label">
+            email
+        <input type="email" id="email" placeholder="your email"  required>
+
+        </label>
+        
+        <label id="number-label">
+            number
+        <input type="number" min=0 max=100 id="number" placeholder="your number" required>
+
+        </label>
+
+        <label id='dropdown-label'>
+            
+            <select id='dropdown'>
+                <option>True</option>
+                <option>False</option>
+            </select>
+        </label>
+
+        <label id="nation-select">
+            <fieldset>
+                <label for="England">England</label>
+                <input type="radio" name="nation" value="England" id="england">
+
+                <label for="England">Scotland</label>
+                <input type="radio" name="nation" value="Scotland" id="scotland">
+                <label for="England">Wales</label>
+                <input type="radio" name="nation" value="Wales" id="wales">
+                <label for="England">Northern Ireland</label>
+                <input type="radio" name="nation" value="Northern" id="northern-ireland">
+            </fieldset>
+        </label>
+
+        <label id="checkbox">
+            <label>
+                Dog person
+                <input type="checkbox" name="type-person" id="dog-person" value='dog'>
+            </label>
+            <label>
+                Cat person
+                <input type="checkbox" name='type-person' id="cat-person" value='cat'>
+            </label>
+
+
+        </label>
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button id='submit'>Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+    
+</body></html>
