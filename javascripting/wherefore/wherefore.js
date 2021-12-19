@@ -1,8 +1,13 @@
-const whatIsInAName = (array, object)=> {
-    
+const whatIsInAName = (array, object) => {
+  const keys = Object.keys(object);
+  const result = [];
+  array.forEach((obj) => {
+    const keys = Object.keys(object);
+    if (keys.every((key) => obj[key] == object[key])) {
+      result.push(obj);
+    }
+  });
+  return result;
+};
 
-    
-    return[{ first: "Tybalt", last: "Capulet" }]
-}
-
-module.exports = {whatIsInAName}
+module.exports = { whatIsInAName };
